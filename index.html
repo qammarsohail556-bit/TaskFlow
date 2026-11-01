@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+</head>
+<body>
+    
+    <!-- Main Part -->
+    <main class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <div class="logo-text">
+                    <h2>TaskFlow</h2>
+                    <p>Organize your day</p>
+                </div>
+
+            </div>
+
+            <!-- Menu Part -->
+            <nav class="menu">
+
+                <a href="#" class="active" data-filter="all">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>All Tasks</span>
+                </a>
+
+                <a href="#" data-filter="pending">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Pending</span>
+                </a>
+
+                <a href="#" data-filter="completed">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Completed</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Statistics</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+            
+        </aside>
+
+        <!-- Main Content -->
+        <section class="content">
+
+            <!-- Header Part -->
+            <header class="header">
+
+                <div class="header-text">
+
+                    <h1>Good Evening!</h1>
+
+                    <p>Let's Organize your work today.</p>
+
+                </div>
+
+                <div class="header-icons">
+
+                    <div class="search-box">
+                        <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Search tasks..."
+                        >
+
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                    <button class="btn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+
+                    <button class="btn">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+
+                </div>
+
+            </header>
+
+            <hr class="divider">
+
+            <!-- Input Field -->
+            <div class="task-input">
+
+                <input class="task-input-field" type="text" placeholder="Add a new task...">
+
+                <button class="add-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Task
+                </button>
+
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list">
+
+            </div>
+
+            <!-- Stats Part -->
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <p class="total-tasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending</h3>
+                    <p class="pending-tasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <p class="completed-tasks">0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Success Rate</h3>
+                    <p class="success-rate">0%</p>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <!-- Editing Modal Part -->
+    <div class="edit-modal">
+
+        <div class="modal-content">
+
+            <h2>Edit Task</h2>
+
+            <input type="text" class="edit-input">
+
+            <div class="modal-buttons">
+
+                <button class="cancel-btn">
+                    Cancel
+                </button>
+
+                <button class="update-btn">
+                    Update Task
+                </button>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
